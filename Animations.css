@@ -57,11 +57,24 @@ html,body{
     animation-timing-function: linear;
 }
 .cloud{
-    border: solid 5px black;
     width:50%;
-}
+    height:50%; 
+    position:absolute;
+    }
 .cloud:nth-child(1){
+    width:200px;
+    top:120px;
     opacity:0.5;
+    animation: wind 37s linear infinite reverse;
+}
+.cloud:nth-child(2){
+    top: 0;
     height:15%;
-    width:10%;
+    top: 0%;
+    width:300px;
+    animation: wind 24s linear infinite reverse;
+}
+@keyframes wind{
+    from {left: 100%}
+    to{left:-300px}
 }
